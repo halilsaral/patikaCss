@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Apple Music</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="/patikaCss/images/loko.png" class="logo">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <img src="/patikaCss/images/moon.png" id="icon">
+        </nav> 
+        <div class="info">
+            <h1>BEST <br><span>Guitars</span> is Here!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, necessitatibus?</p>
+            <a href="#">Download Catalog</a>
+        </div>
+        <div class="imgBox">
+            <img src="/patikaCss/images/pattern.png" class="backImg">
+            <img src="/patikaCss/images/guitar.png" class="mainImg">
+        </div>
+        <div class="sociaLinks">
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-behance"></i></a>
+            <a href=""><i class="fab fa-dribbble"></i></a>
+        </div>
+    </div>
+<script>
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function() {
+        document.body.classList.toggle("darkTheme");
+        if(document.body.classList.contains("darkTheme")) {
+            icon.src = "/patikaCss/images/sun.png";
+        }else{
+            icon.src = "/patikaCss/images/moon.png"
+        }
+    }
+</script>    
+</body>
+</html>
